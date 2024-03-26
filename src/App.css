@@ -1,0 +1,83 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #222831;
+}
+h1 {
+  color: #fff;
+}
+
+.faq-accordian {
+  width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  margin: 30px;
+  border: 2px solid #31363f;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq-item-header {
+  background-color: #31363f;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.faq-item-header:hover {
+  background-color: #31363f;
+}
+.faq-item-body {
+  background-color: #fff;
+  border-radius: 4px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.faq-item-body-content {
+  padding: 15px;
+  color: #555;
+}
+.faq-item.active .faq-item-body {
+  max-height: 500px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 760px) {
+    .faq-accordian {
+      width: 600px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 470px) {
+    .faq-accordian {
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .faq-accordian {
+      width: calc(100% - 3rem);
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .faq-accordian {
+      width: calc(100% - 2rem);
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .faq-accordian {
+      width: calc(100% - 1rem);
+      margin: 0 auto;
+    }
+  }
